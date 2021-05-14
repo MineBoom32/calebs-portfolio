@@ -1,13 +1,3 @@
-@font-face {
-  font-family: Squarewave;
-  src: url(fonts/Squarewave.ttf);
-}
-
-@font-face {
-  font-family: SquarewaveBold;
-  src: url(fonts/Squarewave-Bold.ttf);
-}
-
 body.lb-disable-scrolling {
   overflow: hidden;
 }
