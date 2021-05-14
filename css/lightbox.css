@@ -1,11 +1,11 @@
 @font-face {
   font-family: Squarewave;
-  src: url(fonts/PIXEAB__.TTF);
+  src: url(fonts/Squarewave.ttf);
 }
 
 @font-face {
-  font-family: SquarewaveItalic;
-  src: url(fonts/PIXEARG_.TTF);
+  font-family: SquarewaveBold;
+  src: url(fonts/Squarewave-Bold.ttf);
 }
 
 body.lb-disable-scrolling {

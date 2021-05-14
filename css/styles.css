@@ -207,7 +207,7 @@ nav .links a:hover {
 }
 
 .dark {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/PlaceholderCode.png);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/PlaceholderCode.png);
     height: 100%;
     margin-bottom: 100px;
 }
