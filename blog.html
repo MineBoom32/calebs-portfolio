@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="css/favicon.ico" type="image/x-icon">
+    <title>Caleb Moretti's Blog</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="images/vector/Logo.svg" alt="Caleb Moretti">
+        </div>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="links.html">Links</a>
+            <a href="blog.html" id="here">Blog</a>
+        </div>
+    </nav>
+    <iframe id="article-content">
+        
+    </iframe>
+    <div class="copy" id="copyfixed">
+        <div class="copy-left">
+            &copy; Caleb Moretti 2020-2021
+        </div>
+        <div class="copy-right">
+            Powered by Neocities
+        </div>
+    </div>
+
+    <script>
+        const query = window.location.search;
+        console.log(query);
+        const params = new URLSearchParams(query);
+        const name = params.get('article');
+        console.log(name);
+
+        if (name != null) {
+            const part1 = '/blogpost/articles/';
+            const part3 = '.html';
+            const url = part1.concat(name, part3);
+            console.log(url);
+            document.getElementById("article-content").setAttribute("src", url);
+        } else {
+            document.getElementById("article-content").setAttribute("src", "/blogpost/index.html")
+        }
+
+    </script>
+</body>
+</html>

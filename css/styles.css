@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+html,
+body {
+    width: 100%;
+}
+
+@font-face {
+    font-family: Racer;
+    src: url(./fonts/RACER___.TTF);
+}
+
+@font-face {
+    font-family: Squarewave;
+    src: url(./fonts/Squarewave.ttf);
+}
+
+@font-face {
+    font-family: SquarewaveItalic;
+    src: url(./fonts/Squarewave-Italic.ttf);
+}
+
+@font-face {
+    font-family: Social;
+    src: url(./fonts/SocialMediaCircled.otf);
+}
+
+nav {
+    justify-content: space-between;
+    display: flex;
+    background-color: lightgray;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+}
+
+nav .links {
+    display: flex;
+    justify-content: space-around;
+    float: right;
+    height: 50px;
+    width: 50%;
+    /* background-color: red; */
+}
+
+nav .links a {
+    margin: auto;
+    /* background-color: aqua; */
+    margin-top: 10px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    text-overflow: ellipsis;
+    font-size: 32px;
+    font-family: Squarewave;
+}
+
+nav .logo {
+    display: flex;
+    /* background-color: blue; */
+    float: left;
+    width: 50%;
+    height: 50px;
+}
+
+nav .logo img {
+    margin-left: 20px;
+    width:75%;
+}
+
+#here {
+    color: royalblue;
+    font-family: SquarewaveItalic;
+    letter-spacing: -2px;
+}
+
+nav .links a:hover {
+    color: darkslategray;
+}
+
+#here:hover {
+    color: dodgerblue;
+}
+
+.hero {
+    height: 100vh;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: white;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/Stock1.jpg);
+    line-height: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero h1 {
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero p {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero a {
+    padding: 10px;
+    background-color: royalblue;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    width: max-content;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero a:hover {
+    background-color: dodgerblue;
+}
+
+.content-container {
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#aboutcontainer {
+    margin-bottom: 100px;
+}
+
+.title {
+    font-size: 48px;
+    font-family: Squarewave;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#selfPortrait {
+    width: 40%;
+    height: 90%;
+    background-color: lightgray;
+    background-image: url(../images/CalebFace.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#info {
+    text-align: left;
+    padding: 10px;
+    width: 40%;
+    height: 90%;
+    overflow: auto;
+    background-color: rgb(240, 240, 240);
+}
+
+.social-links {
+    font-family: Social;
+    font-size: 64px;
+    line-height: 200px;
+    text-align: center;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.social-links a:hover {
+    color: royalblue;
+}
+
+.image-links {
+    text-align: center;
+    min-width: 400px;
+    max-width: 60%;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: rgba(256, 256, 256, 0.3);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.image-links a img {
+    height: 31px;
+}
+
+.image-links a img:hover {
+    transform: scale(1.1);
+}
+
+.image-links a img:active {
+    transform: scale(1.05);
+    filter: brightness(75%);
+}
+
+.dark {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/PlaceholderCode.png);
+    height: 100%;
+    margin-bottom: 100px;
+}
+
+.dark .title {
+    color: white;
+}
+
+.red {
+    color: yellow;
+}
+
+
+.copy {
+    line-height: 50px;
+    font-size: 32px;
+    font-family: Squarewave;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: rgb(240, 240, 240);
+}
+
+.copy-left {
+width: 50%;
+float: left;
+}
+
+.copy-right {
+    width: 50%;
+    float: right;
+    text-align: right;
+    }
+
+#copyfixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.copy a {
+    text-decoration: none;
+    color: royalblue;
+}
+
+#portfolio {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+.creation {
+    height: 300px;
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 16px 10% 16px 10%;
+}
+
+.creation .thumb {
+    /* background-image: url(/images/placeholder-thumb.png); */
+    width: 35%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.creation-info {
+    width: 65%;
+    height: 100%;
+    padding: 20px;
+    overflow: auto;
+}
+
+.creation-info h1 {
+    font-size: 32px;
+    font-family: Squarewave;
+    margin: 10px;
+}
+
+.creation-info p {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.creation-info a {
+    padding: 10px;
+    margin-left: 20px;
+    background-color: royalblue;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    width: max-content;
+    margin: auto;
+    line-height: 50px;
+    white-space: nowrap;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.creation-info a:hover {
+    background-color: dodgerblue;
+}
+
+#article-content {
+    padding-top: 50px;
+    width: 100%;
+    height: 90vh;
+    border: none;
+}
+
+.external {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(240, 240, 240);
+    font-size: 16px;
+}
+
+.external h2 {
+    font-family: Squarewave;
+    font-size: 32px;
+    text-align: center;
+}
+
+.external p {
+    width: 75%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.external #toc {
+    width: 75%;
+    margin: auto;
+    margin-top: 30px;
+    list-style: none;
+    text-align: center;
+}
+
+.external #toc a {
+    color: royalblue;
+    font-family: Squarewave;
+    text-decoration: none;
+    font-size: 32px;
+}
+
+.external #toc a:hover {
+    color: dodgerblue;
+}
+
+.thumbRow {
+    text-align: center;
+    margin-bottom: 94px;
+}
+
+.thumbRow a img {
+    width: 200px;
+    height: 200px;
+    border-radius: 16px;
+    border-color: #1c2c61;
+    border-style: solid;
+    border-width: 2;
+    opacity: 50%;
+    transition: ease-in-out 0.5s opacity, ease-in-out 0.5s border-width;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.thumbRow a:hover img {
+    opacity: 100%;
+    border-width: 8px;
+    border-color: #4169e1;
+    border-style: solid;
+}
+
+.highlight {
+    color: royalblue;
+    font-size: 24px;
+}
