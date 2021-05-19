@@ -190,7 +190,6 @@ nav .links a:hover {
     margin-top: 20px;
     background-color: rgba(256, 256, 256, 0.3);
     padding: 10px;
-    max-width: 95%;
     border-radius: 8px;
 }
 
@@ -261,6 +260,10 @@ float: left;
     }
     .copy-right {
         display: none;
+    }
+    .image-links {
+        min-width: 0;
+        max-width:100%;
     }
 }
 
