@@ -109,6 +109,7 @@ nav .links a:hover {
 .hero p {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 0.5em;
 }
 
 .hero a {
